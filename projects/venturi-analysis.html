@@ -41,18 +41,13 @@
     <div class="content-block">
       <h2>Overview</h2>
       <p>
-        I independently conducted a multi-stage airflow experiment using a
-        converging-diverging venturi duct system to verify Bernoulli's principle
-        — a foundational concept in aviation that explains how an aircraft wing
-        generates lift by accelerating airflow over its curved upper surface,
-        reducing pressure and creating an upward force.
-      </p>
-      <p>
-        Using water manometers and imperial unit conversions, I measured dynamic
-        and static pressure at the inlet, throat, and outlet stages of the duct.
-        Airspeeds at each point were then calculated using Bernoulli's equation
-        and cross-validated with the continuity equation. Critical analysis was
-        applied to explain any discrepancies between the two methods.
+        The purpose of this laboratory experiment is to demonstrate and verify
+        Bernoulli's principle through practical measurement and calculation of
+        airflow properties in a converging-diverging duct system, or venturi.
+        This experiment investigates the relationship between fluid velocity and
+        pressure in a variable cross-sectional area flow system using a shop
+        vacuum as the main driving mechanism and water manometers for pressure
+        measurement.
       </p>
     </div>
 
@@ -94,12 +89,21 @@
       </div>
 
       <div class="equation-block">
-        <p class="eq-label">Pressure from Manometer Reading</p>
-        <p class="eq-main">&Delta;P = &rho;<sub>H₂O</sub> &times; g &times; h</p>
+        <p class="eq-label">Step 1 — Manometer Reading to psi</p>
+        <p class="eq-main">P (psi) = h (inH₂O) &times; 0.036127</p>
         <p class="eq-note">
-          Where <em>h</em> = manometer column height (in) &nbsp;|&nbsp;
-          <em>g</em> = 32.174 ft/s² &nbsp;|&nbsp;
-          converted to lb/ft² via unit factors
+          Where <em>h</em> = pressure differential height read from the water manometer (in H₂O)
+          &nbsp;|&nbsp; 0.036127 = conversion factor (1 inH₂O = 0.036127 psi)
+        </p>
+      </div>
+
+      <div class="equation-block">
+        <p class="eq-label">Step 2 — psi to lb/ft²</p>
+        <p class="eq-main">P (lb/ft²) = P (psi) &times; 144</p>
+        <p class="eq-note">
+          1 psi = 1 lb/in² &nbsp;|&nbsp; 1 ft² = 144 in² &nbsp;|&nbsp;
+          therefore multiply psi by 144 to convert to lb/ft², the unit
+          required by Bernoulli's equation
         </p>
       </div>
     </div>
@@ -187,42 +191,6 @@
         reinforced the practical limitations of idealized fluid dynamics when
         applied to real systems.
       </p>
-    </div>
-
-    <!-- 5. What I Learned -->
-    <div class="content-block">
-      <h2>What I Learned</h2>
-      <p>
-        Within an enclosed, narrowing chamber, pressure and velocity are inversely
-        proportional — a relationship that holds whether you're analyzing a venturi
-        tube in a lab or the upper surface of a wing at cruise altitude. This
-        experiment bridged the gap between textbook aerodynamics and what I
-        experience firsthand as a pilot.
-      </p>
-      <p>
-        The pressure–velocity relationship demonstrated here sits at the core of
-        fixed-wing flight. The lab results connected directly to concepts I apply
-        in the cockpit:
-      </p>
-      <ul>
-        <li>
-          <div>
-            <strong>Lift Generation:</strong> Aircraft wings (airfoils) are shaped so
-            that air traveling over the curved upper surface moves faster than air
-            beneath it, creating lower pressure on top and higher pressure below —
-            the same principle observed at the venturi throat — producing an upward
-            net force.
-          </div>
-        </li>
-        <li>
-          <div>
-            <strong>Angle of Attack:</strong> As a pilot raises the nose, the wing
-            forces more air downward. This intensifies the pressure differential and
-            generates additional lift — up to the critical angle where airflow
-            separates from the upper surface and a stall occurs.
-          </div>
-        </li>
-      </ul>
     </div>
 
   </main>
