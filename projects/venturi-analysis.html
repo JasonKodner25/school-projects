@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Venturi Pressure &amp; Velocity Analysis — Jason Kodner</title>
+  <meta name="description" content="A multi-stage airflow experiment using a converging-diverging venturi duct system to verify Bernoulli's principle and its applications in aviation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/project.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav>
+    <a href="../index.html" class="nav-logo">JK / Portfolio</a>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── Project Hero ── -->
+  <header class="project-hero">
+    <a href="../index.html#projects" class="back-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M19 12H5M12 19l-7-7 7-7"/>
+      </svg>
+      All Projects
+    </a>
+
+    <p class="project-eyebrow">Aerodynamics &mdash; Independent Experiment</p>
+    <h1>Venturi Pressure &amp; Velocity Analysis</h1>
+
+    <div class="project-meta">
+      <span class="tag">Aerodynamics</span>
+      <span class="tag amber">SJSU</span>
+      <span class="tag">Bernoulli's Principle</span>
+      <span class="tag">Fluid Dynamics</span>
+      <span class="tag">Aviation Applications</span>
+    </div>
+
+    <div class="horizon"></div>
+  </header>
+
+  <!-- ── Project Content ── -->
+  <main class="project-content">
+
+    <!-- Overview -->
+    <div class="content-block">
+      <h2>Overview</h2>
+      <p>
+        I independently conducted a multi-stage airflow experiment using a
+        converging-diverging venturi duct system to verify Bernoulli's principle
+        — a foundational concept in aviation that explains how an aircraft wing
+        generates lift by accelerating airflow over its curved upper surface,
+        reducing pressure and creating an upward force.
+      </p>
+      <p>
+        Using water manometers and imperial unit conversions, I measured dynamic
+        and static pressure at the inlet, throat, and outlet stages of the duct.
+        Airspeeds at each point were then calculated using Bernoulli's equation
+        and cross-validated with the continuity equation. Critical analysis was
+        applied to explain any discrepancies between the two methods.
+      </p>
+    </div>
+
+    <!-- Visual placeholder -->
+    <div class="content-block">
+      <h2>Visuals</h2>
+      <div class="media-placeholder">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>
+        </svg>
+        <span>Lab photos &amp; diagrams — coming soon</span>
+      </div>
+      <div class="media-placeholder">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+        </svg>
+        <span>Pressure vs. velocity chart — coming soon</span>
+      </div>
+    </div>
+
+    <!-- Key findings -->
+    <div class="content-block">
+      <h2>Key Findings</h2>
+      <p>
+        Results confirmed the inverse relationship between fluid velocity and
+        static pressure across all three measurement stages — inlet, throat, and
+        outlet. The throat, being the narrowest point, produced the highest
+        velocity and the lowest static pressure, exactly as Bernoulli's equation
+        predicts.
+      </p>
+      <div class="findings-grid">
+        <div class="finding-card">
+          <div class="finding-label">Measurement Stages</div>
+          <div class="finding-value">3</div>
+          <div class="finding-sub">Inlet · Throat · Outlet</div>
+        </div>
+        <div class="finding-card">
+          <div class="finding-label">Instruments</div>
+          <div class="finding-value">H₂O</div>
+          <div class="finding-sub">Water manometer columns</div>
+        </div>
+        <div class="finding-card">
+          <div class="finding-label">Validation Method</div>
+          <div class="finding-value">2×</div>
+          <div class="finding-sub">Bernoulli + Continuity eq.</div>
+        </div>
+        <div class="finding-card">
+          <div class="finding-label">Unit System</div>
+          <div class="finding-value">IMP</div>
+          <div class="finding-sub">Imperial with conversions</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aviation applications -->
+    <div class="content-block">
+      <h2>Aviation Applications</h2>
+      <p>
+        The pressure–velocity relationship demonstrated in this experiment sits at
+        the core of fixed-wing flight. After reviewing results against Bernoulli's
+        principle, I documented how the physics extend directly into pilot practice:
+      </p>
+      <ul>
+        <li>
+          <div>
+            <strong>Lift Generation:</strong> Aircraft wings (airfoils) are shaped so
+            that air traveling over the curved upper surface moves faster than air
+            beneath it, creating lower pressure on top and higher pressure below —
+            producing an upward net force.
+          </div>
+        </li>
+        <li>
+          <div>
+            <strong>Angle of Attack:</strong> As a pilot raises the nose, the wing
+            forces more air downward. This intensifies the pressure differential and
+            generates additional lift — up to the critical angle where the airflow
+            separates and a stall occurs.
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Methodology -->
+    <div class="content-block">
+      <h2>Methodology</h2>
+      <p>
+        The experiment was designed to isolate and measure the core variables of
+        Bernoulli's equation within a controlled converging-diverging duct. Each
+        stage was measured independently, with manometer readings taken at steady-state
+        airflow. Results were then converted from raw column heights to velocity values
+        using the full Bernoulli expression, then checked against the continuity
+        equation (A₁V₁ = A₂V₂) as a cross-validation.
+      </p>
+      <p>
+        Discrepancies between the two calculation methods were analyzed to account
+        for real-world factors including duct wall friction, air density variation,
+        and measurement instrument sensitivity — reinforcing the practical limitations
+        of idealized fluid dynamics models in applied settings.
+      </p>
+    </div>
+
+    <!-- Takeaways -->
+    <div class="content-block">
+      <h2>What I Learned</h2>
+      <p>
+        Within an enclosed, narrowing chamber, pressure and velocity are inversely
+        proportional — a relationship that holds whether you're looking at a venturi
+        tube in a lab or the upper surface of a wing at 3,500 feet. This experiment
+        bridged the gap between textbook aerodynamics and what I experience as a pilot:
+        every time I adjust pitch, I'm directly manipulating the pressure differential
+        that keeps the aircraft airborne.
+      </p>
+    </div>
+
+    <!-- Document placeholder -->
+    <div class="content-block">
+      <h2>Lab Report</h2>
+      <div class="media-placeholder" style="min-height:140px;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>
+        </svg>
+        <span>PDF report — coming soon</span>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <p>Jason Kodner &mdash; Aviation Management, SJSU &mdash; <a href="../index.html">Portfolio</a></p>
+  </footer>
+
+</body>
+</html>
