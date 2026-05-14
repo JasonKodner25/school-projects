@@ -28,7 +28,7 @@
     </a>
 
     <p class="project-course">Aviation 31: Aircraft Theory and Design</p>
-    <p class="project-eyebrow">Aerodynamics Experience</p>
+    <p class="project-eyebrow">Aerodynamics Experiment</p>
     <h1>Venturi Pressure &amp; Velocity Analysis</h1>
 
     <div class="horizon"></div>
@@ -60,7 +60,7 @@
         stage was measured independently, with manometer readings taken at
         steady-state airflow. Readings were converted from raw water-column
         heights (in inches H₂O) to pressure values in lb/ft², then fed into
-        Bernoulli's equation to solve for airspeed at each stage.
+        Bernoulli's equation to solve for velocity at each stage.
       </p>
       <p>
         Results were then cross-validated using the continuity equation. Any
@@ -74,8 +74,8 @@
         <p class="eq-main">P<sub>1</sub> + &frac12;&rho;V<sub>1</sub>&sup2; = P<sub>2</sub> + &frac12;&rho;V<sub>2</sub>&sup2;</p>
         <p class="eq-note">
           Where <em>P</em> = static pressure (lb/ft²) &nbsp;|&nbsp;
-          <em>&rho;</em> = air density (slug/ft³) &nbsp;|&nbsp;
-          <em>V</em> = airspeed (ft/s)
+          <em>&rho;</em> = air density = 0.002375 lb·s²/ft⁴ (sea level, standard day) &nbsp;|&nbsp;
+          <em>V</em> = velocity (ft/s)
         </p>
       </div>
 
@@ -84,7 +84,7 @@
         <p class="eq-main">A<sub>1</sub>V<sub>1</sub> = A<sub>2</sub>V<sub>2</sub></p>
         <p class="eq-note">
           Where <em>A</em> = cross-sectional area (ft²) &nbsp;|&nbsp;
-          <em>V</em> = airspeed (ft/s)
+          <em>V</em> = velocity (ft/s)
         </p>
       </div>
 
@@ -153,7 +153,7 @@
         <div class="finding-card">
           <div class="finding-label">Venturi (Throat) Pressure</div>
           <div class="finding-value">−12.5 lb/ft²</div>
-          <div class="finding-sub">2.4 in H₂O &nbsp;·&nbsp; −0.0867 psi &nbsp;·&nbsp; suction</div>
+          <div class="finding-sub">2.4 in H₂O &nbsp;·&nbsp; −0.0867 psi (negative value indicates suction)</div>
         </div>
         <div class="finding-card">
           <div class="finding-label">Outlet Pressure</div>
@@ -161,14 +161,19 @@
           <div class="finding-sub">0.05 in H₂O &nbsp;·&nbsp; 0.00186 psi</div>
         </div>
         <div class="finding-card">
-          <div class="finding-label">Inlet Airspeed</div>
+          <div class="finding-label">Inlet Velocity</div>
           <div class="finding-value">— ft/s</div>
           <div class="finding-sub">Bernoulli calculation</div>
         </div>
         <div class="finding-card">
-          <div class="finding-label">Throat Airspeed</div>
+          <div class="finding-label">Throat Velocity</div>
           <div class="finding-value">— ft/s</div>
           <div class="finding-sub">Highest velocity stage</div>
+        </div>
+        <div class="finding-card">
+          <div class="finding-label">Outlet Velocity</div>
+          <div class="finding-value">— ft/s</div>
+          <div class="finding-sub">Bernoulli calculation</div>
         </div>
         <div class="finding-card">
           <div class="finding-label">Continuity Check</div>
