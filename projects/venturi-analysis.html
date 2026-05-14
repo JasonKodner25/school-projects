@@ -89,21 +89,14 @@
       </div>
 
       <div class="equation-block">
-        <p class="eq-label">Step 1 — Manometer Reading to psi</p>
+        <p class="eq-label">Pressure Conversion — Manometer Reading to lb/ft²</p>
         <p class="eq-main">P (psi) = h (inH₂O) &times; 0.036127</p>
-        <p class="eq-note">
-          Where <em>h</em> = pressure differential height read from the water manometer (in H₂O)
-          &nbsp;|&nbsp; 0.036127 = conversion factor (1 inH₂O = 0.036127 psi)
-        </p>
-      </div>
-
-      <div class="equation-block">
-        <p class="eq-label">Step 2 — psi to lb/ft²</p>
         <p class="eq-main">P (lb/ft²) = P (psi) &times; 144</p>
         <p class="eq-note">
-          1 psi = 1 lb/in² &nbsp;|&nbsp; 1 ft² = 144 in² &nbsp;|&nbsp;
-          therefore multiply psi by 144 to convert to lb/ft², the unit
-          required by Bernoulli's equation
+          Where <em>h</em> = pressure differential height read from the water manometer (in H₂O)
+          &nbsp;|&nbsp; 1 inH₂O = 0.036127 psi &nbsp;|&nbsp;
+          1 psi = 1 lb/in², and 1 ft² = 144 in², so multiply psi by 144
+          to reach lb/ft² — the unit required by Bernoulli's equation
         </p>
       </div>
     </div>
@@ -153,19 +146,19 @@
 
       <div class="findings-grid">
         <div class="finding-card">
-          <div class="finding-label">Inlet Static Pressure</div>
-          <div class="finding-value">— lb/ft²</div>
-          <div class="finding-sub">Measured via water manometer</div>
+          <div class="finding-label">Inlet Pressure</div>
+          <div class="finding-value">12.96 lb/ft²</div>
+          <div class="finding-sub">2.5 in H₂O &nbsp;·&nbsp; 0.0931 psi</div>
         </div>
         <div class="finding-card">
-          <div class="finding-label">Throat Static Pressure</div>
-          <div class="finding-value">— lb/ft²</div>
-          <div class="finding-sub">Lowest pressure stage</div>
+          <div class="finding-label">Venturi (Throat) Pressure</div>
+          <div class="finding-value">−12.5 lb/ft²</div>
+          <div class="finding-sub">2.4 in H₂O &nbsp;·&nbsp; −0.0867 psi &nbsp;·&nbsp; suction</div>
         </div>
         <div class="finding-card">
-          <div class="finding-label">Outlet Static Pressure</div>
-          <div class="finding-value">— lb/ft²</div>
-          <div class="finding-sub">Pressure recovery at exit</div>
+          <div class="finding-label">Outlet Pressure</div>
+          <div class="finding-value">0.26 lb/ft²</div>
+          <div class="finding-sub">0.05 in H₂O &nbsp;·&nbsp; 0.00186 psi</div>
         </div>
         <div class="finding-card">
           <div class="finding-label">Inlet Airspeed</div>
