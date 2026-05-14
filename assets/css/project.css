@@ -22,6 +22,12 @@
 .back-link:hover { color: var(--white); }
 .back-link svg { width: 14px; height: 14px; }
 
+.project-course {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 0.3rem;
+}
+
 .project-eyebrow {
   font-size: 0.72rem;
   font-weight: 700;
@@ -37,13 +43,6 @@
   letter-spacing: -0.02em;
   line-height: 1.15;
   margin-bottom: 1.25rem;
-}
-
-.project-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 2rem;
 }
 
 /* ── Horizon divider ── */
@@ -118,6 +117,53 @@
 .content-block ul li strong {
   color: var(--white);
   font-weight: 600;
+}
+
+/* ── Equation blocks ── */
+.equation-block {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--sky);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.4rem;
+  margin-top: 1.25rem;
+}
+
+.eq-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--sky);
+  margin-bottom: 0.5rem !important;
+}
+
+.eq-main {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--white);
+  font-family: 'Georgia', serif;
+  margin-bottom: 0.4rem !important;
+  letter-spacing: 0.02em;
+}
+
+.eq-note {
+  font-size: 0.78rem !important;
+  color: var(--muted);
+  margin-bottom: 0 !important;
+}
+
+/* ── Setup photo grid ── */
+.setup-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.setup-grid .media-placeholder {
+  margin: 0;
+  min-height: 180px;
 }
 
 /* ── Media placeholder ── */

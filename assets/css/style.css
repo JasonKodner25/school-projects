@@ -130,29 +130,20 @@ section { padding: 4rem 2.5rem 5rem; }
 /* ── Card body ── */
 .card-body { padding: 1.25rem; flex: 1; display: flex; flex-direction: column; }
 
-.card-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-bottom: 0.8rem;
+.card-course {
+  font-size: 0.72rem;
+  color: var(--muted);
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.02em;
 }
 
-.tag {
-  font-size: 0.66rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
+.card-experience {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  padding: 0.2rem 0.6rem;
-  border-radius: 4px;
-  background: var(--tag-bg);
-  color: var(--sky);
-  border: 1px solid rgba(90, 180, 229, 0.2);
-}
-
-.tag.amber {
-  background: rgba(232,168,56,0.08);
   color: var(--amber);
-  border-color: rgba(232,168,56,0.2);
+  margin-bottom: 0.65rem;
 }
 
 .card-title {

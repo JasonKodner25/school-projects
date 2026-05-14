@@ -20,23 +20,16 @@
 
   <!-- ── Project Hero ── -->
   <header class="project-hero">
-    <a href="../index.html#projects" class="back-link">
+    <a href="../index.html" class="back-link">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
         <path d="M19 12H5M12 19l-7-7 7-7"/>
       </svg>
       All Projects
     </a>
 
-    <p class="project-eyebrow">Aerodynamics &mdash; Independent Experiment</p>
+    <p class="project-course">Aviation 31: Aircraft Theory and Design</p>
+    <p class="project-eyebrow">Aerodynamics Experience</p>
     <h1>Venturi Pressure &amp; Velocity Analysis</h1>
-
-    <div class="project-meta">
-      <span class="tag">Aerodynamics</span>
-      <span class="tag amber">SJSU</span>
-      <span class="tag">Bernoulli's Principle</span>
-      <span class="tag">Fluid Dynamics</span>
-      <span class="tag">Aviation Applications</span>
-    </div>
 
     <div class="horizon"></div>
   </header>
@@ -44,7 +37,7 @@
   <!-- ── Project Content ── -->
   <main class="project-content">
 
-    <!-- Overview -->
+    <!-- 1. Overview -->
     <div class="content-block">
       <h2>Overview</h2>
       <p>
@@ -63,64 +56,153 @@
       </p>
     </div>
 
-    <!-- Visual placeholder -->
+    <!-- 2. Methodology -->
     <div class="content-block">
-      <h2>Visuals</h2>
-      <div class="media-placeholder">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>
-        </svg>
-        <span>Lab photos &amp; diagrams — coming soon</span>
+      <h2>Methodology</h2>
+      <p>
+        The experiment was designed to isolate and measure the core variables of
+        Bernoulli's equation within a controlled converging-diverging duct. Each
+        stage was measured independently, with manometer readings taken at
+        steady-state airflow. Readings were converted from raw water-column
+        heights (in inches H₂O) to pressure values in lb/ft², then fed into
+        Bernoulli's equation to solve for airspeed at each stage.
+      </p>
+      <p>
+        Results were then cross-validated using the continuity equation. Any
+        discrepancies between the two methods were analyzed to account for
+        real-world factors including duct wall friction, air density variation,
+        and instrument sensitivity.
+      </p>
+
+      <div class="equation-block">
+        <p class="eq-label">Bernoulli's Equation</p>
+        <p class="eq-main">P<sub>1</sub> + &frac12;&rho;V<sub>1</sub>&sup2; = P<sub>2</sub> + &frac12;&rho;V<sub>2</sub>&sup2;</p>
+        <p class="eq-note">
+          Where <em>P</em> = static pressure (lb/ft²) &nbsp;|&nbsp;
+          <em>&rho;</em> = air density (slug/ft³) &nbsp;|&nbsp;
+          <em>V</em> = airspeed (ft/s)
+        </p>
       </div>
-      <div class="media-placeholder">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
-        </svg>
-        <span>Pressure vs. velocity chart — coming soon</span>
+
+      <div class="equation-block">
+        <p class="eq-label">Continuity Equation (cross-validation)</p>
+        <p class="eq-main">A<sub>1</sub>V<sub>1</sub> = A<sub>2</sub>V<sub>2</sub></p>
+        <p class="eq-note">
+          Where <em>A</em> = cross-sectional area (ft²) &nbsp;|&nbsp;
+          <em>V</em> = airspeed (ft/s)
+        </p>
+      </div>
+
+      <div class="equation-block">
+        <p class="eq-label">Pressure from Manometer Reading</p>
+        <p class="eq-main">&Delta;P = &rho;<sub>H₂O</sub> &times; g &times; h</p>
+        <p class="eq-note">
+          Where <em>h</em> = manometer column height (in) &nbsp;|&nbsp;
+          <em>g</em> = 32.174 ft/s² &nbsp;|&nbsp;
+          converted to lb/ft² via unit factors
+        </p>
       </div>
     </div>
 
-    <!-- Key findings -->
+    <!-- 3. Set Up -->
     <div class="content-block">
-      <h2>Key Findings</h2>
+      <h2>Set Up</h2>
       <p>
-        Results confirmed the inverse relationship between fluid velocity and
-        static pressure across all three measurement stages — inlet, throat, and
-        outlet. The throat, being the narrowest point, produced the highest
-        velocity and the lowest static pressure, exactly as Bernoulli's equation
-        predicts.
+        The venturi duct was mounted horizontally with a fan driving steady airflow
+        through the converging-diverging section. Water manometers were tapped at
+        three measurement points — inlet, throat (narrowest cross-section), and
+        outlet — to capture static pressure at each stage. All measurements were
+        taken after airflow reached a steady state.
       </p>
+
+      <div class="setup-grid">
+        <div class="media-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+          </svg>
+          <span>Venturi duct setup — photo coming soon</span>
+        </div>
+        <div class="media-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+          </svg>
+          <span>Manometer readings — photo coming soon</span>
+        </div>
+        <div class="media-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+          </svg>
+          <span>Duct cross-sections — diagram coming soon</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Results and Findings -->
+    <div class="content-block">
+      <h2>Results &amp; Findings</h2>
+      <p>
+        Measurements confirmed the inverse relationship between static pressure
+        and fluid velocity across all three stages. The throat — the narrowest
+        point — recorded the highest velocity and the lowest static pressure,
+        consistent with both Bernoulli's equation and the continuity equation.
+      </p>
+
       <div class="findings-grid">
         <div class="finding-card">
-          <div class="finding-label">Measurement Stages</div>
-          <div class="finding-value">3</div>
-          <div class="finding-sub">Inlet · Throat · Outlet</div>
+          <div class="finding-label">Inlet Static Pressure</div>
+          <div class="finding-value">— lb/ft²</div>
+          <div class="finding-sub">Measured via water manometer</div>
         </div>
         <div class="finding-card">
-          <div class="finding-label">Instruments</div>
-          <div class="finding-value">H₂O</div>
-          <div class="finding-sub">Water manometer columns</div>
+          <div class="finding-label">Throat Static Pressure</div>
+          <div class="finding-value">— lb/ft²</div>
+          <div class="finding-sub">Lowest pressure stage</div>
         </div>
         <div class="finding-card">
-          <div class="finding-label">Validation Method</div>
-          <div class="finding-value">2×</div>
-          <div class="finding-sub">Bernoulli + Continuity eq.</div>
+          <div class="finding-label">Outlet Static Pressure</div>
+          <div class="finding-value">— lb/ft²</div>
+          <div class="finding-sub">Pressure recovery at exit</div>
         </div>
         <div class="finding-card">
-          <div class="finding-label">Unit System</div>
-          <div class="finding-value">IMP</div>
-          <div class="finding-sub">Imperial with conversions</div>
+          <div class="finding-label">Inlet Airspeed</div>
+          <div class="finding-value">— ft/s</div>
+          <div class="finding-sub">Bernoulli calculation</div>
+        </div>
+        <div class="finding-card">
+          <div class="finding-label">Throat Airspeed</div>
+          <div class="finding-value">— ft/s</div>
+          <div class="finding-sub">Highest velocity stage</div>
+        </div>
+        <div class="finding-card">
+          <div class="finding-label">Continuity Check</div>
+          <div class="finding-value">A₁V₁ = A₂V₂</div>
+          <div class="finding-sub">Cross-validated result</div>
         </div>
       </div>
+
+      <p style="margin-top:1.5rem;">
+        Discrepancies between Bernoulli-derived velocities and continuity-derived
+        velocities were small and attributable to duct wall friction losses and
+        minor air density variation at ambient lab conditions. These deviations
+        reinforced the practical limitations of idealized fluid dynamics when
+        applied to real systems.
+      </p>
     </div>
 
-    <!-- Aviation applications -->
+    <!-- 5. What I Learned -->
     <div class="content-block">
-      <h2>Aviation Applications</h2>
+      <h2>What I Learned</h2>
       <p>
-        The pressure–velocity relationship demonstrated in this experiment sits at
-        the core of fixed-wing flight. After reviewing results against Bernoulli's
-        principle, I documented how the physics extend directly into pilot practice:
+        Within an enclosed, narrowing chamber, pressure and velocity are inversely
+        proportional — a relationship that holds whether you're analyzing a venturi
+        tube in a lab or the upper surface of a wing at cruise altitude. This
+        experiment bridged the gap between textbook aerodynamics and what I
+        experience firsthand as a pilot.
+      </p>
+      <p>
+        The pressure–velocity relationship demonstrated here sits at the core of
+        fixed-wing flight. The lab results connected directly to concepts I apply
+        in the cockpit:
       </p>
       <ul>
         <li>
@@ -128,68 +210,26 @@
             <strong>Lift Generation:</strong> Aircraft wings (airfoils) are shaped so
             that air traveling over the curved upper surface moves faster than air
             beneath it, creating lower pressure on top and higher pressure below —
-            producing an upward net force.
+            the same principle observed at the venturi throat — producing an upward
+            net force.
           </div>
         </li>
         <li>
           <div>
             <strong>Angle of Attack:</strong> As a pilot raises the nose, the wing
             forces more air downward. This intensifies the pressure differential and
-            generates additional lift — up to the critical angle where the airflow
-            separates and a stall occurs.
+            generates additional lift — up to the critical angle where airflow
+            separates from the upper surface and a stall occurs.
           </div>
         </li>
       </ul>
-    </div>
-
-    <!-- Methodology -->
-    <div class="content-block">
-      <h2>Methodology</h2>
-      <p>
-        The experiment was designed to isolate and measure the core variables of
-        Bernoulli's equation within a controlled converging-diverging duct. Each
-        stage was measured independently, with manometer readings taken at steady-state
-        airflow. Results were then converted from raw column heights to velocity values
-        using the full Bernoulli expression, then checked against the continuity
-        equation (A₁V₁ = A₂V₂) as a cross-validation.
-      </p>
-      <p>
-        Discrepancies between the two calculation methods were analyzed to account
-        for real-world factors including duct wall friction, air density variation,
-        and measurement instrument sensitivity — reinforcing the practical limitations
-        of idealized fluid dynamics models in applied settings.
-      </p>
-    </div>
-
-    <!-- Takeaways -->
-    <div class="content-block">
-      <h2>What I Learned</h2>
-      <p>
-        Within an enclosed, narrowing chamber, pressure and velocity are inversely
-        proportional — a relationship that holds whether you're looking at a venturi
-        tube in a lab or the upper surface of a wing at 3,500 feet. This experiment
-        bridged the gap between textbook aerodynamics and what I experience as a pilot:
-        every time I adjust pitch, I'm directly manipulating the pressure differential
-        that keeps the aircraft airborne.
-      </p>
-    </div>
-
-    <!-- Document placeholder -->
-    <div class="content-block">
-      <h2>Lab Report</h2>
-      <div class="media-placeholder" style="min-height:140px;">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>
-        </svg>
-        <span>PDF report — coming soon</span>
-      </div>
     </div>
 
   </main>
 
   <!-- ── Footer ── -->
   <footer>
-    <p>Jason Kodner &mdash; Aviation Management, SJSU &mdash; <a href="../index.html">Portfolio</a></p>
+    <p>Jason Kodner</p>
   </footer>
 
 </body>
