@@ -233,7 +233,7 @@
 }
 
 .vel-arrow.up   { color: var(--sky); }
-.vel-arrow.down { color: var(--amber); }
+.vel-arrow.down { color: var(--sky); }
 
 /* ── Responsive ── */
 @media (max-width: 600px) {
