@@ -72,12 +72,15 @@
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
+  text-align: center;
 }
 
+.content-block h2::before,
 .content-block h2::after {
   content: '';
   flex: 1;
+  min-width: 1.5rem;
   height: 1px;
   background: var(--border);
 }
