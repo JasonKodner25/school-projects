@@ -63,43 +63,6 @@
         heights (in inches H₂O) to pressure values in lb/ft², then fed into
         Bernoulli's equation to solve for velocity at each stage.
       </p>
-      <p>
-        Results were then cross-validated using the continuity equation. Any
-        discrepancies between the two methods were analyzed to account for
-        real-world factors including duct wall friction, air density variation,
-        and instrument sensitivity.
-      </p>
-
-      <div class="equation-block">
-        <p class="eq-label">Bernoulli's Equation</p>
-        <p class="eq-main">P<sub>1</sub> + &frac12;&rho;V<sub>1</sub>&sup2; = P<sub>2</sub> + &frac12;&rho;V<sub>2</sub>&sup2;</p>
-        <p class="eq-note">
-          Where <em>P</em> = static pressure (lb/ft²) &nbsp;|&nbsp;
-          <em>&rho;</em> = air density = 0.002375 lb·s²/ft⁴ (sea level, standard day) &nbsp;|&nbsp;
-          <em>V</em> = velocity (ft/s)
-        </p>
-      </div>
-
-      <div class="equation-block">
-        <p class="eq-label">Continuity Equation (cross-validation)</p>
-        <p class="eq-main">A<sub>1</sub>V<sub>1</sub> = A<sub>2</sub>V<sub>2</sub></p>
-        <p class="eq-note">
-          Where <em>A</em> = cross-sectional area (ft²) &nbsp;|&nbsp;
-          <em>V</em> = velocity (ft/s)
-        </p>
-      </div>
-
-      <div class="equation-block">
-        <p class="eq-label">Pressure Conversion — Manometer Reading to lb/ft²</p>
-        <p class="eq-main">P (psi) = h (inH₂O) &times; 0.036127</p>
-        <p class="eq-main">P (lb/ft²) = P (psi) &times; 144</p>
-        <p class="eq-note">
-          Where <em>h</em> = pressure differential height read from the water manometer (in H₂O)
-          &nbsp;|&nbsp; 1 inH₂O = 0.036127 psi &nbsp;|&nbsp;
-          1 psi = 1 lb/in², and 1 ft² = 144 in², so multiply psi by 144
-          to reach lb/ft² — the unit required by Bernoulli's equation
-        </p>
-      </div>
     </div>
 
     <!-- 3. Set Up -->
@@ -136,19 +99,50 @@
       </div>
     </div>
 
-    <!-- 4. Measurements -->
+    <!-- 4. Steps -->
     <div class="content-block">
-      <h2>Measurements</h2>
+      <h2>Steps</h2>
     </div>
 
-    <!-- 5. Results and Findings -->
+    <!-- 5. Relevant Equations -->
+    <div class="content-block">
+      <h2>Relevant Equations</h2>
+
+      <div class="equation-block">
+        <p class="eq-label">Bernoulli's Equation</p>
+        <div class="eq-row">
+          <p class="eq-main">P<sub>1</sub> + &frac12;&rho;V<sub>1</sub>&sup2; = P<sub>2</sub> + &frac12;&rho;V<sub>2</sub>&sup2;</p>
+          <p class="eq-desc">Explains overall relationship between Pressure and Velocity</p>
+        </div>
+        <p class="eq-note">
+          Where <em>P</em> = static pressure (lb/ft²) &nbsp;|&nbsp;
+          <em>&rho;</em> = air density = 0.002375 lb·s²/ft⁴ (sea level, standard day) &nbsp;|&nbsp;
+          <em>V</em> = velocity (ft/s)
+        </p>
+      </div>
+
+      <div class="equation-block">
+        <p class="eq-label">Dynamic Pressure</p>
+        <div class="eq-row">
+          <p class="eq-main">q = &frac12;&rho;V&sup2;</p>
+          <p class="eq-desc">Quantifies the kinetic energy per unit volume of moving air (or fluid)</p>
+        </div>
+        <p class="eq-note">
+          Where <em>q</em> = dynamic pressure (lb/ft²) &nbsp;|&nbsp;
+          <em>&rho;</em> = air density (lb·s²/ft⁴) &nbsp;|&nbsp;
+          <em>V</em> = velocity (ft/s)
+        </p>
+      </div>
+    </div>
+
+    <!-- 6. Results and Findings -->
     <div class="content-block">
       <h2>Results &amp; Findings</h2>
       <p>
         Measurements confirmed the inverse relationship between static pressure
         and fluid velocity across all three stages. The venturi (narrowest point)
         recorded the highest velocity and the lowest static pressure, consistent
-        with both Bernoulli's equation and the continuity equation.
+        with Bernoulli's equation.
       </p>
 
       <div class="findings-grid">
@@ -179,21 +173,9 @@
           <div class="finding-label">Outlet Velocity</div>
           <div class="finding-value">14.84 ft/s <span class="vel-arrow down">&#8595;</span></div>
         </div>
-        <div class="finding-card">
-          <div class="finding-label">Continuity Check</div>
-          <div class="finding-value">A₁V₁ = A₂V₂</div>
-          <div class="finding-sub">Cross-validated result</div>
-        </div>
       </div>
 
       <p style="margin-top:1.5rem;">
-        Discrepancies between Bernoulli-derived velocities and continuity-derived
-        velocities were small and attributable to duct wall friction losses and
-        minor air density variation at ambient lab conditions. These deviations
-        reinforced the practical limitations of idealized fluid dynamics when
-        applied to real systems.
-      </p>
-      <p style="margin-top:1rem;">
         As airflow is forced through the narrow venturi throat, velocity spikes
         dramatically — from 61.78 ft/s at the inlet to 147.1 ft/s at the throat
         — while pressure simultaneously drops to its lowest recorded value. This
@@ -202,9 +184,9 @@
       </p>
     </div>
 
-    <!-- 6. Key Takeaways -->
+    <!-- 7. Real World Applications -->
     <div class="content-block">
-      <h2>Key Takeaways</h2>
+      <h2>Real World Applications</h2>
     </div>
 
   </main>
