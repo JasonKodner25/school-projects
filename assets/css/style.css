@@ -88,12 +88,27 @@ section { padding: 4rem 2.5rem 5rem; }
   transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .project-card:hover {
   transform: translateY(-4px);
   border-color: var(--sky);
   box-shadow: 0 8px 32px rgba(90, 180, 229, 0.12);
+}
+
+/* Whole-card link: the title link's overlay covers the full card */
+.card-stretched-link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.card-stretched-link:focus-visible { outline: none; }
+.project-card:has(.card-stretched-link:focus-visible) {
+  outline: 2px solid var(--sky);
+  outline-offset: 2px;
 }
 
 /* Placeholder card */
