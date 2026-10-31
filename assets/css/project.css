@@ -336,17 +336,6 @@
   overflow: hidden;
 }
 
-.figure-card .figure-tag {
-  font-size: 0.68rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: #c8920a;
-  padding: 0.6rem 0.9rem;
-  margin-bottom: 0;
-  border-bottom: 1px solid var(--border);
-}
-
 .figure-card img {
   width: 100%;
   height: auto;
