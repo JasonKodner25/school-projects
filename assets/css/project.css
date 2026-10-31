@@ -1,7 +1,7 @@
 /* ── Project detail page styles ── */
 
 .project-hero {
-  padding: 5rem 2rem 3.5rem;
+  padding: 3.5rem 2rem 0.5rem;
   max-width: 860px;
   margin: 0 auto;
 }
@@ -38,7 +38,7 @@
 }
 
 .project-hero h1 {
-  font-size: clamp(1.9rem, 4.5vw, 3.2rem);
+  font-size: clamp(1.6rem, 4.6vw, 2.4rem);
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.15;
@@ -51,7 +51,7 @@
   width: 100%;
   height: 1px;
   background: linear-gradient(90deg, var(--amber), transparent);
-  margin-bottom: 3.5rem;
+  margin-bottom: 2.5rem;
 }
 
 /* ── Project content ── */
@@ -318,4 +318,56 @@
 .step-paren {
   font-size: 0.8em;
   font-weight: 500;
+}
+
+/* ── Overview with figure panel ── */
+.overview-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 2rem;
+  align-items: start;
+}
+
+.overview-figures {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.figure-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.figure-card .figure-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #c8920a;
+  padding: 0.6rem 0.9rem;
+  margin-bottom: 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.figure-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.2s;
+}
+
+.figure-card a:hover img { opacity: 0.85; }
+
+.figure-card figcaption {
+  font-size: 0.8rem;
+  line-height: 1.55;
+  color: var(--muted);
+  padding: 0.65rem 0.9rem 0.8rem;
+}
+
+@media (max-width: 760px) {
+  .overview-grid { grid-template-columns: 1fr; }
 }
