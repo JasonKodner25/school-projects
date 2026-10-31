@@ -285,3 +285,32 @@
   margin-bottom: 0 !important;
   line-height: 1.5 !important;
 }
+
+/* ── Steps ── */
+.step { margin-top: 1.5rem; }
+.step:first-of-type { margin-top: 0; }
+
+.step-title {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.step-num {
+  flex-shrink: 0;
+  min-width: 1.75rem;
+  height: 1.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--amber);
+  color: var(--amber);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
