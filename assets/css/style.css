@@ -2,18 +2,18 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg:         #0a1b2e;
-  --sheet:      #0c2036;
-  --sheet-alt:  #0f2741;
-  --line:       rgba(140, 190, 230, 0.22);
-  --line-soft:  rgba(140, 190, 230, 0.12);
-  --grid-minor: rgba(140, 190, 230, 0.045);
-  --grid-major: rgba(140, 190, 230, 0.10);
-  --ink:        #e6edf3;
-  --text:       #b4c6d8;
-  --muted:      #8aa2ba;
-  --accent:     #7cc4ef;
-  --amber:      #e8b44a;
+  --bg:         #05080d;
+  --sheet:      #0a0f16;
+  --sheet-alt:  #0e141d;
+  --line:       rgba(170, 185, 200, 0.16);
+  --line-soft:  rgba(170, 185, 200, 0.08);
+  --grid-minor: rgba(170, 185, 200, 0.028);
+  --grid-major: rgba(170, 185, 200, 0.06);
+  --ink:        #e3e7eb;
+  --text:       #b0b9c3;
+  --muted:      #7d8894;
+  --accent:     #9bb4c9;
+  --amber:      #d2a54a;
   --radius:     2px;
   --font:       'IBM Plex Sans', system-ui, sans-serif;
   --mono:       'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
@@ -49,15 +49,13 @@ nav {
   align-items: center;
   padding: 0 2.5rem;
   height: 54px;
-  background: rgba(10, 27, 46, 0.95);
+  background: rgba(5, 8, 13, 0.96);
   border-bottom: 1px solid var(--line);
 }
 
 .nav-logo {
-  font-family: var(--mono);
-  font-size: 0.85rem;
-  font-weight: 500;
-  letter-spacing: 0.04em;
+  font-size: 0.95rem;
+  font-weight: 600;
   color: var(--ink);
 }
 
@@ -202,7 +200,7 @@ footer {
   position: sticky;
   top: 100vh;
   border-top: 1px solid var(--line);
-  background: rgba(10, 27, 46, 0.95);
+  background: rgba(5, 8, 13, 0.96);
   padding: 1.5rem 2.5rem;
   text-align: center;
   font-family: var(--mono);

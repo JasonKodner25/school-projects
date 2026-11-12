@@ -10,8 +10,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  font-family: var(--mono);
-  font-size: 0.78rem;
+  font-size: 0.85rem;
   color: var(--muted);
   margin-bottom: 2rem;
   transition: color 0.15s;
@@ -316,7 +315,7 @@ a.fig-frame:hover { border-color: var(--accent); }
 .data-table tbody tr:last-child td { border-bottom: 1px solid var(--line); }
 
 .data-table .row-key th,
-.data-table .row-key td { background: rgba(124, 196, 239, 0.06); }
+.data-table .row-key td { background: rgba(155, 180, 201, 0.07); }
 
 .content-block .table-note {
   font-size: 0.8rem;
