@@ -133,9 +133,10 @@ a.fig-frame:hover { border-color: var(--accent); }
 
 .fig-no {
   font-family: var(--mono);
+  font-size: 0.95rem;
   font-weight: 500;
-  color: var(--ink);
-  margin-right: 0.35rem;
+  color: var(--amber);
+  margin-right: 0.45rem;
 }
 
 /* Overview figures: side by side, under the text */
