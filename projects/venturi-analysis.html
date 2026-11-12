@@ -7,7 +7,7 @@
   <meta name="description" content="A multi-stage airflow experiment using a converging-diverging venturi duct system to verify Bernoulli's principle and its applications in aviation." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link rel="stylesheet" href="../assets/css/project.css" />
 </head>
@@ -37,7 +37,7 @@
 
     <!-- 1. Overview -->
     <div class="content-block">
-      <h2>Overview</h2>
+      <h2><span class="sec-num">01</span>Overview</h2>
       <p>
         The purpose of this laboratory experiment is to demonstrate and verify
         Bernoulli's principle through practical measurement and calculation of
@@ -51,22 +51,22 @@
       </p>
 
       <div class="overview-figures">
-        <figure class="figure-card">
-          <a href="../assets/images/venturifinal.png" target="_blank" rel="noopener">
+        <figure>
+          <a class="fig-frame" href="../assets/images/venturifinal.png" target="_blank" rel="noopener">
             <img src="../assets/images/venturifinal.png" alt="Diagram of a venturi tube: air flows from wide section A1 into narrow throat A2, and the manometer column over the throat sits lower by height h" />
           </a>
           <figcaption>
-            Air speeds up as it squeezes through the narrow throat (A&#8322;),
+            <span class="fig-no">Fig. 1</span>Air speeds up as it squeezes through the narrow throat (A&#8322;),
             so its pressure drops, shown by the lower water column (h).
           </figcaption>
         </figure>
 
-        <figure class="figure-card">
-          <a href="../assets/images/liftfinal.png" target="_blank" rel="noopener">
+        <figure>
+          <a class="fig-frame" href="../assets/images/liftfinal.png" target="_blank" rel="noopener">
             <img src="../assets/images/liftfinal.png" alt="Airflow around a wing: faster air over the top creates low pressure, slower air below creates high pressure, producing lift" />
           </a>
           <figcaption>
-            The same principle on a wing: faster air over the top means lower
+            <span class="fig-no">Fig. 2</span>The same principle on a wing: faster air over the top means lower
             pressure above, and the pressure difference produces lift.
           </figcaption>
         </figure>
@@ -75,7 +75,7 @@
 
     <!-- 2. Methodology -->
     <div class="content-block">
-      <h2>Methodology</h2>
+      <h2><span class="sec-num">02</span>Methodology</h2>
       <p>
         The experiment was designed to isolate and measure the core variables of
         Bernoulli's equation within a controlled converging-diverging duct. Each
@@ -88,7 +88,7 @@
 
     <!-- 3. Set Up -->
     <div class="content-block">
-      <h2>Set Up</h2>
+      <h2><span class="sec-num">03</span>Set Up</h2>
       <p>
         Using a shop vacuum as the primary air-driving mechanism, the lab setup
         is simple yet effective. Air forced from the shop vac enters through an
@@ -105,24 +105,30 @@
       </p>
 
       <div class="setup-grid">
-        <div class="setup-photo">
-          <p class="photo-caption">Setup with shop vac view</p>
-          <img src="../assets/images/bernoulli2.png" alt="Setup with shop vac view" />
-        </div>
-        <div class="setup-photo">
-          <p class="photo-caption">Setup with labels</p>
-          <img src="../assets/images/bernoulli3.png" alt="Setup with labels" />
-        </div>
-        <div class="setup-photo">
-          <p class="photo-caption">Manometer Readings &mdash; Reading Air Pressure from Water Displacement</p>
-          <img src="../assets/images/newimage.png" alt="Manometer readings at each stage: 2.5 in. at the inlet, -2.4 in. at the throat, 0.05 in. at the outlet" />
-        </div>
+        <figure>
+          <div class="fig-frame">
+            <img src="../assets/images/bernoulli2.png" alt="Setup with shop vac view" />
+          </div>
+          <figcaption><span class="fig-no">Fig. 3</span>Setup with shop vac view</figcaption>
+        </figure>
+        <figure>
+          <div class="fig-frame">
+            <img src="../assets/images/bernoulli3.png" alt="Setup with labels" />
+          </div>
+          <figcaption><span class="fig-no">Fig. 4</span>Setup with labels</figcaption>
+        </figure>
+        <figure>
+          <div class="fig-frame">
+            <img src="../assets/images/newimage.png" alt="Manometer readings at each stage: 2.5 in. at the inlet, -2.4 in. at the throat, 0.05 in. at the outlet" />
+          </div>
+          <figcaption><span class="fig-no">Fig. 5</span>Manometer Readings &mdash; Reading Air Pressure from Water Displacement</figcaption>
+        </figure>
       </div>
     </div>
 
     <!-- 4. Steps -->
     <div class="content-block">
-      <h2>Steps</h2>
+      <h2><span class="sec-num">04</span>Steps</h2>
 
       <div class="step">
         <h3 class="step-title"><span class="step-num">1</span><span class="step-text">Identify Assumptions and Constants</span></h3>
@@ -151,7 +157,7 @@
 
     <!-- 5. Relevant Equations -->
     <div class="content-block">
-      <h2>Relevant Equations</h2>
+      <h2><span class="sec-num">05</span>Relevant Equations</h2>
 
       <div class="equation-block">
         <p class="eq-label">Bernoulli's Equation</p>
@@ -182,7 +188,7 @@
 
     <!-- 6. Results and Findings -->
     <div class="content-block">
-      <h2>Results &amp; Findings</h2>
+      <h2><span class="sec-num">06</span>Results &amp; Findings</h2>
       <p>
         Measurements confirmed the inverse relationship between static pressure
         and fluid velocity across all three stages. The venturi (narrowest point)
@@ -190,37 +196,46 @@
         with Bernoulli's equation.
       </p>
 
-      <div class="findings-grid">
-        <div class="finding-card">
-          <div class="finding-label">Inlet Pressure</div>
-          <div class="finding-value">12.96 lb/ft²</div>
-          <div class="finding-sub">2.5 in H₂O &nbsp;·&nbsp; 0.0931 psi</div>
-        </div>
-        <div class="finding-card">
-          <div class="finding-label">Venturi Pressure</div>
-          <div class="finding-value">−12.5 lb/ft²</div>
-          <div class="finding-sub">2.4 in H₂O &nbsp;·&nbsp; −0.0867 psi (negative value indicates suction)</div>
-        </div>
-        <div class="finding-card">
-          <div class="finding-label">Outlet Pressure</div>
-          <div class="finding-value">0.26 lb/ft²</div>
-          <div class="finding-sub">0.05 in H₂O &nbsp;·&nbsp; 0.00186 psi</div>
-        </div>
-        <div class="finding-card">
-          <div class="finding-label">Inlet Velocity</div>
-          <div class="finding-value">61.78 ft/s</div>
-        </div>
-        <div class="finding-card">
-          <div class="finding-label">Venturi Velocity</div>
-          <div class="finding-value">147.1 ft/s <span class="vel-arrow up">&#8593;</span></div>
-        </div>
-        <div class="finding-card">
-          <div class="finding-label">Outlet Velocity</div>
-          <div class="finding-value">14.84 ft/s <span class="vel-arrow down">&#8595;</span></div>
-        </div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption><span class="fig-no">Table 1</span>Measured and calculated values at each stage</caption>
+          <thead>
+            <tr>
+              <th scope="col">Stage</th>
+              <th scope="col">Manometer reading <span class="unit">h (in H₂O)</span></th>
+              <th scope="col">Static pressure <span class="unit">(psi)</span></th>
+              <th scope="col">Static pressure <span class="unit">(lb/ft²)</span></th>
+              <th scope="col">Velocity <span class="unit">(ft/s)</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Inlet</th>
+              <td>2.5</td>
+              <td>0.0931</td>
+              <td>12.96</td>
+              <td>61.78</td>
+            </tr>
+            <tr class="row-key">
+              <th scope="row">Throat / Venturi</th>
+              <td>&minus;2.4</td>
+              <td>&minus;0.0867</td>
+              <td>&minus;12.5</td>
+              <td>147.1</td>
+            </tr>
+            <tr>
+              <th scope="row">Outlet</th>
+              <td>0.05</td>
+              <td>0.00186</td>
+              <td>0.26</td>
+              <td>14.84</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+      <p class="table-note">Negative values indicate suction (pressure below ambient).</p>
 
-      <p style="margin-top:1.5rem;">
+      <p style="margin-top:1.25rem;">
         As airflow is forced through the narrow venturi throat, velocity spikes
         dramatically — from 61.78 ft/s at the inlet to 147.1 ft/s at the throat
         — while pressure simultaneously drops to its lowest recorded value. This
@@ -231,7 +246,7 @@
 
     <!-- 7. Real World Applications -->
     <div class="content-block">
-      <h2>Real World Applications</h2>
+      <h2><span class="sec-num">07</span>Real World Applications</h2>
     </div>
 
   </main>
