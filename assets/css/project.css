@@ -50,7 +50,7 @@
 .content-block:last-child { margin-bottom: 0; }
 
 .content-block h2 {
-  font-size: 1.15rem;
+  font-size: 1.35rem;
   font-weight: 600;
   color: var(--ink);
   margin-bottom: 1.1rem;
@@ -67,14 +67,6 @@
   min-width: 1.5rem;
   height: 1px;
   background: var(--line);
-}
-
-.sec-num {
-  font-family: var(--mono);
-  font-weight: 500;
-  font-size: 0.85em;
-  color: var(--accent);
-  margin-right: 0.6rem;
 }
 
 .content-block p {
